@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 6940855232335610009}
   - component: {fileID: 6940855232335609989}
   - component: {fileID: 6940855232335610010}
-  - component: {fileID: 6940855232335609988}
   - component: {fileID: 923613884710127170}
+  - component: {fileID: 6430322458768899583}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -157,21 +157,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &6940855232335609988
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6940855232335610014}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af47e4feaa6193c41b86c5055ebd7d19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  character: {fileID: 6940855232335610014}
-  speed: 2
-  jumpPower: 5
 --- !u!114 &923613884710127170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189,3 +174,18 @@ MonoBehaviour:
   - {fileID: 2072588277726378740, guid: 2cd3a35f2d1e0f74d976f939f913a11b, type: 3}
   - {fileID: 1852425275589292140, guid: 1d2385555a3efbb438208e4be6787a5c, type: 3}
   countOfBacks: 3
+--- !u!114 &6430322458768899583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6940855232335610014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee3a4a575d7a6b44e86b79c64525fbc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  character: {fileID: 6940855232335610014}
+  speed: 2
+  jumpPower: 5

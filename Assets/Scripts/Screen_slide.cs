@@ -7,8 +7,6 @@ public class Screen_slide : MonoBehaviour
     public List<GameObject> backgrounds;
     public int countOfBacks;
     float backLastPos;
-    public GameObject canvas;
-
 
     void Start()
     {
@@ -17,7 +15,6 @@ public class Screen_slide : MonoBehaviour
             int newid = 1;
             int RandomBack = Random.Range(0, backgrounds.Count);
             GameObject newBackground = Instantiate(backgrounds[RandomBack]);
-            newBackground.transform.SetParent(canvas.transform, false);
 
             if(newid == 0)
             {

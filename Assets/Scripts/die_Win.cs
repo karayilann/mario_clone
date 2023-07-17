@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class die_Win : MonoBehaviour
 {
     public GameObject character;
-    public GameObject canvas;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {

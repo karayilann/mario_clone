@@ -5,15 +5,18 @@ using UnityEditor;
 
 public class character_controller : MonoBehaviour
 {
+
+        // Oyunu en baþýnda android için tasarladýðýmda yazdýðým kodlar.
+
     Animator anim;
     Rigidbody2D rb;
     public GameObject character;
 
     public float speed;
     public float jumpPower;
-    bool isRunRight = false;
+    public bool isRunRight = false;
     bool canJump = false;
-    bool isRunLeft = false;
+    public bool isRunLeft = false;
 
     void Start()
     {
@@ -97,6 +100,14 @@ public class character_controller : MonoBehaviour
 
     private void FixedUpdate()
     {
+        float YatayHareket = Input.GetAxisRaw("Horizontal");
+        float DikeyHareket = Input.GetAxisRaw("Vertical");
+
+        if (YatayHareket > 0)
+        {
+            RunRight();
+        }
+
         if (isRunRight)
         {
             transform.Translate(Vector2.right * speed * Time.deltaTime);
