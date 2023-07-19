@@ -7,6 +7,7 @@ TagManager:
   - terrain
   - traps
   - win
+  - fruits
   layers:
   - Default
   - TransparentFX
